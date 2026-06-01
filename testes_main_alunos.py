@@ -84,7 +84,9 @@ class TestCalculadora(unittest.TestCase):
 
         # Teste números negativos - fazer 3 testes para todas as versões
         self.assertEqual(calculadora(-2, 3, '*'), -6)
-
+        self.assertEqual(calculadora_v2(-2, 3, '*'), -6)
+        self.assertEqual(calculadora_v3(-2, 3, '*'), -6)
+        self.assertEqual(calculadora_v4(-2, 3, '*'), -6)
         # Teste números negativos com divisão e módulo, testar para todas as versões
         self.assertTrue(calculadora(-6, 3, '/'), -2.0)
         self.assertTrue(calculadora(-7, 3, '%'), 2.0)
