@@ -6,7 +6,7 @@ from main import calculadora, calculadora_v2, calculadora_v3, calculadora_v4
 class TestCalculadora(unittest.TestCase):
 
     def teste_operacoes_basicas(self):
-        # Teste operações básicas do operador +
+        # Teste operações básicas do operador + - * / % ^
         self.assertEqual(calculadora(2, 3, '+'), 5)
         self.assertEqual(calculadora(5, 3, '-'), 2)
         self.assertEqual(calculadora(2, 3, '*'), 6)
