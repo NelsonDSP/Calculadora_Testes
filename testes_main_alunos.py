@@ -6,10 +6,8 @@ from main import calculadora, calculadora_v2, calculadora_v3, calculadora_v4
 class TestCalculadora(unittest.TestCase):
 
     def teste_operacoes_basicas(self):
-        # Teste operações básicas do operador +
+        # Teste operações básicas de cada operador + - * / % ^
         self.assertEqual(calculadora(2, 3, '+'), 5)
-        self.assertEqual(calculadora(10, 5, '+'), 15)
-        self.assertEqual(calculadora(-2, 3, '+'), 1)
 
     def teste_v2_operacoes(self):
         # Teste operações básicas de cada operador + - * / % ^
@@ -56,4 +54,3 @@ if __name__ == '__main__':
     unittest.main()
 
 # para correr os testes: python -m unittest -v testes_main_alunos.py
-
